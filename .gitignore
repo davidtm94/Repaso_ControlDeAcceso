@@ -41,3 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/NBMarcosLibreria/dist/
+/NBMarcosLibreria/build/
+/NBMarcosProg/nbproject/private/
+/NBMarcosProg/build/

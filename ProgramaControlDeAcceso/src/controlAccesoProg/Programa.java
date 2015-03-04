@@ -19,12 +19,12 @@ public class Programa {
         
         BaseDatos bbdd=new BaseDatos();
         bbdd.abrirConexion();
-        /*
-        bbdd.engadirControlAcceso("", 1, 8);
-        bbdd.mostrarControlAcceso(1);
-        bbdd.mostrarIncidencias(1);
-        bbdd.mostrarPagasExtra(1);
-               */ 
+        
+        bbdd.engadirControlAcceso("", 4, 9);
+        bbdd.mostrarControlAcceso(4);
+        bbdd.mostrarIncidencias(4);
+        bbdd.mostrarPagasExtra(4);
+               
         bbdd.pecharConexion();
     }
     

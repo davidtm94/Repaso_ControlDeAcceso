@@ -26,7 +26,7 @@ public class BaseDatos {
 
     public void abrirConexion() {
         try {
-            ODB baseDatos = ODBFactory.open(DB_NAME);
+            baseDatos = ODBFactory.open(DB_NAME);
         } catch (Exception erro) {
             System.out.println("Fallo ao abrir conexion"+erro.getMessage());
         }
@@ -83,7 +83,7 @@ public class BaseDatos {
         ca.addPropertyChangeListener(pa); //PagaExtra á escoita
 
         //Asígnalle ó obxecto ControlAcceso as horas traballadas --> Ás veces lanza un evento que recollerán os oíntes
-        ca.setHorasTraballadas(horasTraballadas); //Xa está feito no constructor pero bueno...
+        ca.setHorasTraballadas(horasTraballadas); //ISTO LANZA O EVENTO
 
         //Garda o obxecto ControlAcceso na BD
         baseDatos.store(ca);
